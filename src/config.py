@@ -1,3 +1,6 @@
+# Device Parameters
+DEVICE_PASSWORD='12345'
+
 # Wifi Parameters
 WIFI_ID = 'KengKeng2'
 WIFI_PASSWORD = '050110kenzo'
@@ -18,3 +21,7 @@ DHT_PIN = 26
 
 # Other Parameters
 DELAY = 10
+TDS_PARAM = 0
+WATER_PARAM = 0
+OPEN_TIME = 100
+SLEEP_TIME = 10
