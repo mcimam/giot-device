@@ -2,15 +2,15 @@
 DEVICE_PASSWORD='12345'
 
 # Wifi Parameters
-WIFI_ID = 'KengKeng2'
-WIFI_PASSWORD = '050110kenzo'
+WIFI_ID = ''
+WIFI_PASSWORD = ''
 
 # MQTT Server Parameters
 MQTT_TOPIC     = "test/"
-MQTT_URL       = "103.75.25.70"
-MQTT_PORT      = "1883"
-MQTT_USER      = "admin"
-MQTT_PASSWORD  = "public"
+MQTT_URL       = ""
+MQTT_PORT      = "1833"
+MQTT_USER      = ""
+MQTT_PASSWORD  = ""
 
 
 # Pin Parameter
