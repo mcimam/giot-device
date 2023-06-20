@@ -11,7 +11,6 @@ class DHT:
         }
 
         try:
-            self.sensor.measure()
             result["temp"] = random.randrange(10, 30)
             result["hum"] = random.randrange(15, 30)
             
@@ -34,7 +33,7 @@ class TDS:
         }
 
         try:
-            result["tds"] = self.random.randrange(-10000, 3000)
+            result["tds"] = random.randrange(-10000, 3000)
         except OSError as e:
             print('TDS_ERROR : ', end='')
             print(e)
