@@ -12,6 +12,11 @@ MQTT_PORT      = "1833"
 MQTT_USER      = ""
 MQTT_PASSWORD  = ""
 
+# XML RPC Parameters
+RPC_URL = "http://localhost:8069"
+RPC_DB = "kr_v15"
+RPC_USER = "admin"
+RPC_PASS = "admin"
 
 # Pin Parameter
 RELAY_PIN = 27
