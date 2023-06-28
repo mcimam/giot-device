@@ -106,10 +106,16 @@ SLEEP_TIME = 10
 2. Compile and Insert src folder to esp32
 
 ## Emulator
-I also create emulator to simulate esp32 behaviour. This emulator simulate how microcontroller process comaand and send log to backend.
+I also create emulator to simulate esp32 behaviour when interacting with backend through api. This emulator simulate how microcontroller process comaand and send log to backend.
 To run this emulator, simply tun emulator/sandbox.py
 
-1. Run emulator
+1. Configure simulation
+You can configure sensor result in `emulator/sensor_sandbox.py`. What you need is change vaue in randrange to something appropriate.
+``` python
+sensor = random.randrange(min_value, max_value)
+```
+
+2. Run sandbox emulator
 ``` bash
 python sandbox.py
 ```
