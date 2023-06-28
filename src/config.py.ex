@@ -1,22 +1,22 @@
 # Device Parameters
-DEVICE_PASSWORD='-'
+DEVICE_PASSWORD=''
 
 # Wifi Parameters
 WIFI_ID = ''
 WIFI_PASSWORD = ''
 
 # MQTT Server Parameters
-MQTT_TOPIC     = "test/"
+MQTT_TOPIC     = ""
 MQTT_URL       = ""
 MQTT_PORT      = "1833"
 MQTT_USER      = ""
 MQTT_PASSWORD  = ""
 
 # XML RPC Parameters
-RPC_URL = "https://odoodes-st2-bd.mcimam.xyz"
-RPC_DB = "odoo"
-RPC_USER = "admin@mcimam.xyz"
-RPC_PASS = "admin"
+RPC_URL = ""
+RPC_DB = ""
+RPC_USER = ""
+RPC_PASS = ""
 
 # Pin Parameter
 RELAY_PIN = 27
@@ -25,8 +25,8 @@ TDS_PIN = 34
 DHT_PIN = 26
 
 # Other Parameters
-DELAY = 10
-TDS_PARAM = 0
-WATER_PARAM = 0
-OPEN_TIME = 100
-SLEEP_TIME = 10
+DELAY = 
+TDS_PARAM = 
+WATER_PARAM = 
+OPEN_TIME = 
+SLEEP_TIME = 

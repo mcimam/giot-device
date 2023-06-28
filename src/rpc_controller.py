@@ -5,12 +5,12 @@ import xmlrpc.client
 from config import RPC_DB, RPC_URL, RPC_PASS, RPC_USER
 
 class OdooAPI:
-    def __init__(self) -> None:
+    def __init__(self, mac) -> None:
         self.url = RPC_URL
         self.db = RPC_DB
         self.user = RPC_USER
         self.passwd = RPC_PASS
-        self.mac = '2123'
+        self.mac = mac
 
         common = xmlrpc.client.ServerProxy('{}/xmlrpc/2/common'.format(self.url))
         self.uid = common.authenticate(self.db, self.user, self.passwd, {})        
@@ -44,14 +44,5 @@ class OdooAPI:
     
     def test(self):
         print('test')
-
-if __name__ == "__main__":
-    RPC_URL = 'http://localhost:8069'
-    RPC_DB = 'kr_v15'
-    RPC_USER = 'admin'
-    RPC_PASS = 'admin'
-    
-    opi = OdooAPI()
-    opi.report_log({'test_log': 'ok'})
     
     

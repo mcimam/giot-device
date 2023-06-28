@@ -36,7 +36,7 @@ device_config = {
     'open_time': OPEN_TIME
 }
 
-opi = OdooAPI()
+opi = OdooAPI('6D:35:B2:B7:04:05')
 
 print("start simulation")
 while True:
@@ -83,6 +83,8 @@ while True:
     sleep(sleep_time)
     print('---')
     print(dvc)
+    # Insert log
+    opi.report_log(dvc)
     print('=====')
     
     
