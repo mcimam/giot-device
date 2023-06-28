@@ -23,10 +23,13 @@ pip install esptool setuptools
 
 3. Flash firmware
 Port can be find in /dev (ubuntu) or device manager (windows)
+Note: For linux user, if error could not open <port>, the port doesn't exist, please run sudo chmod a+rw /dev/ttyUSB0
+
 ``` bash
 python -m esptool --chip esp32 erase_flash
 python -m esptool --chip esp32 --port <serial_port> write_flash -z 0x1000 <esp32-X.bin>
 ```
+
 
 2. Edit Config 
 
